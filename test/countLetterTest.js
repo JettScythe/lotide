@@ -2,7 +2,7 @@ const countLetters = require('../countLetter');
 const { assert, expect } = require('chai');
 
 describe('#countLetter', () => {
-  it('should return an object with the count', () => {
+  it('should return an object with the count for each letter as the key:value pair', () => {
     assert.deepEqual(countLetters('Hello with some spaces'), {
       H: 1,
       e: 3,
