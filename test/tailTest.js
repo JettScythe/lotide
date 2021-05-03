@@ -1,10 +1,15 @@
 const tail = require('../tail');
-const assertEqual = require('../assertEqual');
+const { assert, expect } = require('chai');
 
-// Test Case: Check the original array
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
+describe('#tail', () => {
+  it('should not modify the original array', () => {
+    const words = ["Yo Yo", "Lighthouse", "Labs"];
+    tail(words);
+    assert.strictEqual(words.length, 3)
+  });
 
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(JSON.stringify(result), JSON.stringify(["Lighthouse", "Labs"]));
+  it('should be equal when comparing function to expected result', () => {
+    const result = tail(["Hello", "Lighthouse", "Labs"]);
+    assert.deepEqual(result, ["Lighthouse", "Labs"]);
+  });
+});
