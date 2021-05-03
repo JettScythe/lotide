@@ -4,7 +4,7 @@ const { assert, expect } = require('chai');
 //TESTS
 describe('#middle', () => {
   it('should return [3, 4] for [1, 2, 3, 4, 5, 6]', () => {
-    assert.deepEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4])
+    assert.deepEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
   });
 
   it('should return [3, 4] when comparing middle([1, 2, 3, 4, 5, 6]) and middle([12, 3, 4, 99])', () => {
