@@ -12,6 +12,4 @@ const countLetters = (str) => {
   return results;
 };
 
-
-console.log(countLetters('Hello with some spaces'));
 module.exports = countLetters;

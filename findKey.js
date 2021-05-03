@@ -17,6 +17,8 @@ const findKey = (object, callback) => {
   }
 };
 
+module.exports = findKey;
+
 assertEqual('noma', findKey({
   "Blue Hill": { stars: 1 },
   "Akaleri":   { stars: 3 },

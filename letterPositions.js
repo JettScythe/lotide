@@ -17,6 +17,8 @@ const letterPositions = (sentence)  => {
   return results;
 };
 
+module.exports = letterPositions;
+
 const eqArrays = (arr1, arr2) => {
   if (arr1.length !== arr2.length) {
     return false;

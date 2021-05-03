@@ -29,6 +29,8 @@ const without = (source, itemsToRemove) => {
   console.log(newArr);
 };
 
+module.exports = without;
+
 without([1, 2, 3], [1]); // => [2, 3]
 without(["1", "2", "3"], [1, 2, "3"]); // => ["1", "2"]
 const words = ["hello", "world", "lighthouse"];
