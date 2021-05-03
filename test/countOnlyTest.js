@@ -18,7 +18,7 @@ describe('#countOnly', () => {
     assert.strictEqual(result1["Jason"], 1);
     assert.strictEqual(result1["Karima"], undefined);
     assert.strictEqual(result1["Fang"], 2);
-    assert.strictEqual(result1["Agouhanna"], undefined)
-  })
-})
+    assert.strictEqual(result1["Agouhanna"], undefined);
+  });
+});
 

@@ -10,8 +10,8 @@ describe('#findKey', () => {
       "elBulli":   { stars: 3 },
       "Ora":       { stars: 2 },
       "Akelarre":  { stars: 3 }
-    }, x => x.stars === 2))
-  })
+    }, x => x.stars === 2));
+  });
 
   it('should return undefined if no key is found', () => {
     assert.deepEqual(undefined, findKey({
@@ -19,6 +19,6 @@ describe('#findKey', () => {
       "Akaleri":   { stars: 3 },
       "elBulli":   { stars: 3 },
       "Akelarre":  { stars: 3 }
-    }, x => x.stars === 2))
-  })
-})
+    }, x => x.stars === 2));
+  });
+});
